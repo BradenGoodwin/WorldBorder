@@ -4,11 +4,11 @@ plugins {
 }
 
 group = "com.wimbli.WorldBorder"
-version = "1.17"
+version = "1.18"
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(8))
+        languageVersion.set(JavaLanguageVersion.of(17))
     }
 }
 
@@ -20,9 +20,9 @@ repositories {
 }
 
 dependencies {
-    compileOnly(group = "org.spigotmc", name = "spigot-api", version = "1.14-R0.1-SNAPSHOT")
-    compileOnly(group = "us.dynmap", name = "dynmap-api", version = "3.1")
-    implementation(group = "io.papermc", name = "paperlib", version = "1.0.6")
+    compileOnly(group = "org.spigotmc", name = "spigot-api", version = "1.18-R0.1-SNAPSHOT")
+    compileOnly(group = "us.dynmap", name = "dynmap-api", version = "3.2-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.18-R0.1-SNAPSHOT")
 }
 
 defaultTasks("clean", "build")
